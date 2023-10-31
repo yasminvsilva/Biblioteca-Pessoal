@@ -1,4 +1,4 @@
-CREATE SCHEMA `biblioteca_pessoal` DEFAULT CHARACTER SET cp1256 ;
+CREATE SCHEMA `biblioteca_pessoal`;
 CREATE USER 'bibliotecario'@'127.0.0.1' IDENTIFIED BY "b1bl10t3c@r10";
 GRANT ALL PRIVILEGES ON biblioteca_pessoal.* TO 'bibliotecario'@'127.0.0.1';
 CREATE USER 'app_biblioteca'@'127.0.0.1' IDENTIFIED BY "@pp_b1bl10t3c@";
