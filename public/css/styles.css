@@ -2,28 +2,34 @@
 body, h1, h2, h3, ul, li, a {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Lexend Deca', sans-serif;    
     text-decoration: none;
 }
 
 /* Estilização do header */
 header {
-    background-color: #333;
+    background-color: #589632;
     color: white;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
+    display: flex;
     text-align: center;
 }
 
 header h1 {
-    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Estilização do menu */
+
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-left: 35rem;
+    margin-top: 0.25rem;
 }
 
 nav li {
@@ -38,12 +44,24 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: #9DDA77;
 }
 
 /* Estilo do conteúdo principal */
 main {
     padding: 2rem;
+}
+
+section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    margin-top: 2rem;
+}
+
+main h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    margin-top: 2rem;
 }
 
 /* Estilo para ocultar elementos */
@@ -88,14 +106,14 @@ main {
 }
 
 #bookPopup button[type="submit"] {
-    background: #007BFF;
+    background: #9DDA77;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 #bookPopup button[type="submit"]:hover {
-    background: #0056b3;
+    background: #567842;
 }
 
 #bookPopup #closePopupBtn {
@@ -108,16 +126,20 @@ main {
 }
 
 .icon-btn {
-    background: none;
-    border: none;
+    background-color: #9DDA77;
+    border: 1rem #9DDA77;
+    padding: 0.5rem;
+    border-radius: 5px;
     cursor: pointer;
-    color: #007BFF; /* Cor do ícone */
+    color: #fff; /* Cor do ícone */
     font-size: 1.2rem; /* Tamanho do ícone */
     transition: color 0.3s;
+    margin-top: 2rem;
 }
 
 .icon-btn:hover {
-    color: #0056b3; /* Cor do ícone ao passar o mouse */
+    color: #9DDA77; /* Cor do ícone ao passar o mouse */
+    background-color: #fff;
 }
 
 /* Pode querer estilizar de forma diferente dependendo da ação */
@@ -128,3 +150,21 @@ main {
 .icon-btn.delete:hover {
     color: #b02130; /* Cor vermelha ao passar o mouse */
 }
+
+
+
+th {
+    color: #78787A;
+    padding: 2rem 2rem 0 0;
+    font-weight: 100;
+}
+
+footer {
+    margin-left: 2rem;
+}
+
+
+
+
+
+
