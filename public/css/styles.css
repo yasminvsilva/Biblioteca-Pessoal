@@ -2,13 +2,13 @@
 body, h1, h2, h3, ul, li, a {
     margin: 0;
     padding: 0;
-    font-family: 'Lexend Deca', sans-serif;    
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
 
 /* Estilização do header */
 header {
-    background-color: #589632;
+    background-color: #4169E1;
     color: white;
     padding: 1.5rem 0;
     display: flex;
@@ -44,7 +44,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #9DDA77;
+    background-color: #90B1DB;
 }
 
 /* Estilo do conteúdo principal */
@@ -106,14 +106,14 @@ main h2 {
 }
 
 #bookPopup button[type="submit"] {
-    background: #9DDA77;
+    background: #4169E1;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 #bookPopup button[type="submit"]:hover {
-    background: #567842;
+    background: #90B1DB;
 }
 
 #bookPopup #closePopupBtn {
@@ -126,8 +126,8 @@ main h2 {
 }
 
 .icon-btn {
-    background-color: #9DDA77;
-    border: 1rem #9DDA77;
+    background-color: #4169E1;
+    border: 1rem #4169E1;
     padding: 0.5rem;
     border-radius: 5px;
     cursor: pointer;
@@ -138,8 +138,8 @@ main h2 {
 }
 
 .icon-btn:hover {
-    color: #9DDA77; /* Cor do ícone ao passar o mouse */
-    background-color: #fff;
+    color: #FFF; /* Cor do ícone ao passar o mouse */
+    background-color: #90B1DB;
 }
 
 /* Pode querer estilizar de forma diferente dependendo da ação */
@@ -151,12 +151,11 @@ main h2 {
     color: #b02130; /* Cor vermelha ao passar o mouse */
 }
 
-
-
 th {
     color: #78787A;
-    padding: 2rem 2rem 0 0;
+    padding: 2rem 3rem 0 0;
     font-weight: 100;
+    justify-content: space-between;
 }
 
 footer {
