@@ -1,16 +1,18 @@
-/* Reset básico */
-body, h1, h2, h3, ul, li, a {
+/* reset */
+
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
-/* Estilização do header */
+/* header */
+
 header {
-    background-color: #4169E1;
-    color: white;
-    padding: 1.5rem 0;
+    background-color: #FFF;
+    color: #8C85F7;
+    padding: 2.5rem;
     display: flex;
     text-align: center;
 }
@@ -18,17 +20,15 @@ header {
 header h1 {
     margin-left: 2rem;
     font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
 }
 
-/* Estilização do menu */
+/* menu */
 
 nav ul {
-    list-style-type: none;
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-left: 35rem;
+    margin-left: 40rem;
     margin-top: 0.25rem;
 }
 
@@ -37,39 +37,97 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: #000000;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #90B1DB;
+    color: #8C85F7;
+    border: solid 2px #8C85F7;
 }
 
-/* Estilo do conteúdo principal */
-main {
-    padding: 2rem;
-}
+/* conteúdo principal */
 
-section h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.75rem;
+.home-page {
+    display: flex;
+    justify-content: center;
     margin-top: 2rem;
 }
 
-main h2 {
+.home-page img {
+    width: 30%;
+    margin-right: 6rem;
+}
+
+.home-page h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.75rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.home-page p {
+    color: #707070;
+}
+
+.home-page button {
+    background-color: #8C85F7;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem;
+    padding-inline: 2.5rem;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 41px;
+    margin-top: 2rem;
+    margin-bottom: 6.5rem;
+}
+
+.home-page a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* página de livros */
+
+.livros-page {
+    margin-left: 4.5rem;
     margin-top: 2rem;
 }
 
-/* Estilo para ocultar elementos */
-.hidden {
-    display: none;
+.livros-page h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
 }
 
-/* Estilização do Popup */
+.livros-page p {
+    color: #707070;
+    margin-top: 0.5rem;
+}
+
+th {
+    color: #707070;
+    padding: 2rem 3rem 0 0;
+    font-weight: 100;
+    justify-content: space-between;
+}  /* Não entendi como estiliza isso */
+
+.icon-btn {
+    background-color: #8C85F7;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    padding-inline: 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s;
+    margin-top: 2rem;
+}
+
+/* popup */
+
 .show {
     position: fixed;
     top: 0;
@@ -106,7 +164,7 @@ main h2 {
 }
 
 #bookPopup button[type="submit"] {
-    background: #4169E1;
+    background: #8C85F7;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -125,18 +183,6 @@ main h2 {
     background: #aaa;
 }
 
-.icon-btn {
-    background-color: #4169E1;
-    border: 1rem #4169E1;
-    padding: 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #fff; /* Cor do ícone */
-    font-size: 1.2rem; /* Tamanho do ícone */
-    transition: color 0.3s;
-    margin-top: 2rem;
-}
-
 .icon-btn:hover {
     color: #FFF; /* Cor do ícone ao passar o mouse */
     background-color: #90B1DB;
@@ -151,19 +197,7 @@ main h2 {
     color: #b02130; /* Cor vermelha ao passar o mouse */
 }
 
-th {
-    color: #78787A;
-    padding: 2rem 3rem 0 0;
-    font-weight: 100;
-    justify-content: space-between;
+/* Estilo para ocultar elementos */
+.hidden {
+    display: none;
 }
-
-footer {
-    margin-left: 2rem;
-}
-
-
-
-
-
-
