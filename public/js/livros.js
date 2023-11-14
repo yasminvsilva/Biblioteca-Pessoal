@@ -15,10 +15,10 @@ function displayLivros(livros) {
         dataCell.textContent = new Date(livro.dataPublicacao).toLocaleDateString();
 
         const actionsCell = row.insertCell(3);
-        actionsCell.innerHTML = `<button class="icon-btn" onclick='editarLivro(${JSON.stringify(livro)})'>
+        actionsCell.innerHTML = `<button class="icon-btn-edit" onclick='editarLivro(${JSON.stringify(livro)})'>
         <i class="fas fa-edit"></i> Editar
     </button>
-    <button class="icon-btn" onclick="deleteLivro(${livro.id})">
+    <button class="icon-btn-delete" onclick="deleteLivro(${livro.id})">
     <i class="fas fa-trash"></i> Excluir
     </button>`;
     });
