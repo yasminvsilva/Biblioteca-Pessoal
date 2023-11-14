@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livros - Biblioteca Pessoal</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflae.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
 
@@ -24,22 +25,27 @@
     </header>
 
     <main class="livros-page">
-       <h2>Livros</h2>
-       <p>Lista de livros</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Título</th>
-                    <th>Autor</th>
-                    <th>Data de publicação</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody id="listaLivros"></tbody>
-        </table>
-        <button class="icon-btn" id="addBookBtn">
-            <i class="fas fa-plus"></i> Adicionar
-        </button>
+        <div class="esquerda">
+            <h2>Livros</h2>
+            <p>Lista de livros</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Data de publicação</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="listaLivros"></tbody>
+            </table>
+            <button class="icon-btn" id="addBookBtn">
+                <i class="fas fa-plus"></i> Adicionar
+            </button>
+        </div>
+        <div class="direita">
+            <img src="images/leitura.svg" alt="Mulher estudando e lendo um livro.">
+        </div>
     </main>
 
     <!-- popup para adicionar/atualizar livro -->
