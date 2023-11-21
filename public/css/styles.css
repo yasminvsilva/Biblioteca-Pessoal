@@ -271,3 +271,36 @@ th {
 .hidden {
     display: none;
 }
+
+/* estilização do select */
+
+#bookForm input::placeholder {
+    color: #000000;
+}
+
+.autor-secao,
+.editora-secao {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.autor-secao label,
+.editora-secao label {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.autor-secao select,
+.editora-secao select {
+    border: none;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+}
+
+.autor-secao select option,
+.editora-secao select option {
+    color: #CCC;
+}
