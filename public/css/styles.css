@@ -218,10 +218,17 @@ th {
 }
 
 #bookPopup input[type="text"],
-#bookPopup input[type="date"],
-#bookPopup button {
+#bookPopup input[type="date"] {
     width: 100%;
     margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#bookPopup button {
+    width: 100%;
+    margin-bottom: 0.5rem;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -303,4 +310,14 @@ th {
 .autor-secao select option,
 .editora-secao select option {
     color: #CCC;
+}
+
+.nasc {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+#dataNascimento,
+#dataPublicacao {
+    margin-top: 0.5rem;
 }
