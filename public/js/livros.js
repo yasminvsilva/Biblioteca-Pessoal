@@ -59,7 +59,6 @@ function editarLivro(livro) {
     dataPublicacao.value = new Date(livro.dataPublicacao).toISOString().split('T')[0];
     livroId.value = livro.id;
     addBookBtn.click();
-/**/
 }
 
 function limparFormulario(){
