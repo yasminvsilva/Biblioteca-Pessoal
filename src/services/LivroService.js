@@ -6,14 +6,14 @@ async function listarLivros() {
 }
 
 async function adicionarLivro(livro) {
-    const { titulo, autor, dataPublicacao } = livro;
-    const [results] = await pool.query('INSERT INTO livros (titulo, autor, dataPublicacao) VALUES (?, ?, ?)', [titulo, autor, dataPublicacao]);
+    const { titulo, autor, editora, dataPublicacao } = livro;
+    const [results] = await pool.query('INSERT INTO livros (titulo, autor, editora, dataPublicacao) VALUES (?, ?, ?, ?)', [titulo, autor, editora, dataPublicacao]);
     return results.insertId;
 }
 
 async function atualizarLivro(id, livro) {
-    const { titulo, autor, dataPublicacao } = livro;
-    await pool.query('UPDATE livros SET titulo = ?, autor = ?, dataPublicacao = ? WHERE id = ?', [titulo, autor, dataPublicacao, id]);
+    const { titulo, autor, editora, dataPublicacao } = livro;
+    await pool.query('UPDATE livros SET titulo = ?, autor = ?, editora = ?, dataPublicacao = ? WHERE id = ?', [titulo, autor, editora, dataPublicacao, id]);
 }
 
 async function deletarLivro(id) {
